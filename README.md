@@ -1,16 +1,32 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Lolikate Frontend
 
-Currently, two official plugins are available:
+Este proyecto es un sistema web para elegir el mejor campeón (pick) en League of Legends, basado en los picks aliados y enemigos durante la fase de selección.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Solo incluye el frontend (interfaz de usuario).
+- Permite seleccionar campeones para ambos equipos y filtrar por rol.
+- El pick recomendado se muestra destacado, separado de los aliados.
+- Los datos de campeones se obtienen dinámicamente desde CommunityDragon.
 
-## React Compiler
+## Instalación y uso
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clona el repositorio:
+	```
+	git clone https://github.com/Skinnyrafff/Lolikate
+	```
+2. Entra a la carpeta `Frontend`:
+	```
+	cd Lolikate/Frontend
+	```
+3. Instala dependencias:
+	```
+	npm install
+	```
+4. Ejecuta el frontend:
+	```
+	npm run dev
+	```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notas
+- Este repositorio solo contiene la interfaz. El backend (lógica de recomendación y roles) debe implementarse por separado.
+- Inspirado en la experiencia de selección de campeones de LoL.
